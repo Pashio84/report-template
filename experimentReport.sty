@@ -1,0 +1,54 @@
+\makeatletter % sectionのフォントを明朝体に設定
+\renewcommand{\section}{\@startsection{section}{1}{\z@}
+{1.5\Cvs \@plus.5\Cvs \@minus.2\Cvs}%
+{.5\Cvs \@plus.3\Cvs}%
+{\reset@font\Large\mcfamily}}
+\makeatother % section設定終わり
+\makeatletter % subsectionのフォントを明朝体に設定
+\renewcommand{\subsection}{\@startsection{subsection}{1}{\z@}
+{1.5\Cvs \@plus.5\Cvs \@minus.2\Cvs}%
+{.5\Cvs \@plus.3\Cvs}%
+{\reset@font\large\mcfamily}}
+\makeatother % subsection設定終わり
+\makeatletter % subsubsectionのフォントを明朝体に設定
+\renewcommand{\subsubsection}{\@startsection{subsubsection}{1}{\z@}
+{1.5\Cvs \@plus.5\Cvs \@minus.2\Cvs}%
+{.5\Cvs \@plus.3\Cvs}%
+{\reset@font\normalsize\mcfamily}}
+\makeatother % subsubsection設定終わり
+
+\usepackage{multirow}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{here}
+\usepackage{float}
+\setlength {\textwidth} {40zw} % 1ページあたりの行の文字数設定
+\setlength {\textheight} {40\baselineskip} % 1ページあたりの項の行数設定
+\usepackage{geometry}
+\geometry{top=20truemm, bottom=20truemm, left=25truemm, right=20truemm} % 余白設定
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{\thepage{}} % ページヘッダーの右側にページ数を記載
+\rfoot{} % ページフッター右側の設定(なし)
+\cfoot{} % ページフッター中央の設定(なし)
+\renewcommand{\headrulewidth}{0pt}
+
+\usepackage{listings}
+\lstset{ % コードを書くためのタグ{lstlisting}の設定
+    basicstyle={\ttfamily\small}, %書体の指定
+    frame=single, %フレームの指定
+    framesep=10pt, %フレームと中身（コード）の間隔
+    breaklines=true, %行が長くなった場合の改行
+    linewidth=165mm, %フレームの横幅
+    lineskip=-0.5ex, %行間の調整
+    tabsize=2 %Tabを何文字幅にするかの指定
+} % lstlistingの設定終わり
+
+% 数式環境設定
+\usepackage{amsmath,amssymb}
+\usepackage{mathtools}
+\mathtoolsset{showonlyrefs=true}
+% 数式環境設定 終わり
+
+% 単位の表記統一
+\usepackage{siunitx} %% SI単位系の出力
+% 書き方 \SI{数値}{単位}
