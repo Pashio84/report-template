@@ -4,3 +4,4 @@ code.fdb_latexmk
 code.fls
 code.log
 code.synctex.gz
+.vscode
