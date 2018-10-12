@@ -42,6 +42,9 @@
         "latex-workshop.view.pdf.viewer": "tab",
     }
     ```
+
+## Visual Studio CodeでTeXファイルをコンパイル
+
 1. コンパイルしたいtexファイルを開いた状態で､ウィンドウメニューバーの `表示 > コマンド パレット` を開く
 1. `latex build` と入力して､`LaTeX Workshop: Build LaTeX project` を選択
 1. おわり
